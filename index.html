@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas & New Year Wishes 2026</title>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* --- Basic Setup & Colors --- */
+        :root {
+            --gold: #FFD700;
+            --dark-brown: #3E2723;
+            --black-bg: #121212;
+            --text-light: #f5f5f5;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Great+Vibes&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Tiro Devanagari Hindi', serif;
+            background-color: var(--black-bg);
+            color: var(--text-light);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- Festive Effects (Fireworks, Smoke, Santa) --- */
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://i.gifer.com/origin/a6/a6323a6d708a34d28f3521287c89b4f7_w200.gif');
+            background-size: cover;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .smoke-overlay {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(18, 18, 18, 0.9) 20%, transparent 100%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .santa {
+            position: fixed;
+            bottom: -20px;
+            left: -50px;
+            width: 200px;
+            z-index: 10;
+            animation: slideInSanta 2s ease-out forwards;
+            filter: drop-shadow(0 0 15px rgba(0,0,0,0.5));
+        }
+
+        @keyframes slideInSanta {
+            from { left: -250px; }
+            to { left: -50px; }
+        }
+
+        /* --- Main Container & Layout --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* --- Content Styling --- */
+        .greeting-card {
+            background-color: rgba(62, 39, 35, 0.6);
+            border: 2px solid var(--gold);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .greeting h1 {
+            font-family: 'Great Vibes', cursive;
+            color: var(--gold);
+            font-size: 3em;
+            margin: 0;
+            animation: slideUp 1s ease-out;
+            text-shadow: 0 0 10px var(--gold);
+        }
+
+        .greeting p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            animation: slideUp 1.2s ease-out;
+        }
+
+        #senderName {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .main-gif {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid var(--gold);
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        .bible-verse {
+            font-size: 1.3em;
+            font-style: italic;
+            margin: 30px 10px;
+            padding: 20px;
+            border-left: 5px solid var(--gold);
+            background-color: rgba(0,0,0,0.2);
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .jesus-img {
+            max-width: 80%;
+            border-radius: 50%;
+            border: 5px dotted var(--gold);
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in;
+        }
+        
+        /* --- YouTube Video Container --- */
+        .video-container {
+            margin: 30px 0;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+            border-radius: 10px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- Generator Section --- */
+        .generator-section {
+            background-color: var(--dark-brown);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border: 2px solid var(--gold);
+        }
+
+        .generator-section h3 {
+            color: var(--gold);
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #nameInput {
+            width: 80%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid var(--gold);
+            background-color: var(--black-bg);
+            color: var(--text-light);
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--gold);
+            color: var(--dark-brown);
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--gold);
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            display: none; /* Initially hidden */
+            margin: 10px auto;
+            width: 80%;
+        }
+
+        #generatedLinkContainer {
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+        }
+        
+        #generatedLink {
+            padding: 10px;
+            background-color: rgba(0,0,0,0.3);
+            border: 1px dashed var(--gold);
+            color: var(--gold);
+            text-align: center;
+            word-wrap: break-word;
+            margin: 0 auto 15px auto;
+            width: 80%;
+            cursor: pointer;
+        }
+        
+        /* --- Social & Affiliate Links --- */
+        .social-links, .affiliate-section, .adsense-placeholder {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gold);
+        }
+
+        h2.section-title {
+            font-family: 'Great Vibes', cursive;
+            color: var(--gold);
+            font-size: 2.8em;
+        }
+
+        .social-icons a {
+            color: var(--text-light);
+            font-size: 2.5em;
+            margin: 0 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--gold);
+            transform: scale(1.2);
+        }
+
+        .affiliate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .affiliate-item {
+            background-color: var(--dark-brown);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--gold);
+            transition: transform 0.3s;
+        }
+        
+        .affiliate-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .affiliate-item img {
+            max-width: 100%;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 20px;
+            background-color: var(--gold);
+            color: var(--dark-brown);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .adsense-placeholder {
+            min-height: 100px;
+            border: 2px dashed #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            margin: 20px 0;
+        }
+        
+        /* --- Subscription Modal --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            display: none; /* Initially hidden */
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: var(--dark-brown);
+            padding: 30px 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            max-width: 90%;
+            width: 400px;
+            position: relative;
+        }
+        
+        .modal-content h3 {
+             font-family: 'Great Vibes', cursive;
+             font-size: 2.2em;
+             color: var(--gold);
+             margin-bottom: 15px;
+        }
+
+        .modal-content p {
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: var(--text-light);
+            font-size: 2em;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Festive Background Effects -->
+    <div class="fireworks"></div>
+    <div class="smoke-overlay"></div>
+    <img src="santa.png" alt="Santa Claus" class="santa">
+
+    <div class="container">
+
+        <div class="greeting-card">
+             <!-- पहला विज्ञापन कोड -->
+            <div style="margin: 15px 0; text-align: center;">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : 'e5b6d73228e5280be0783c69184c963f',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/e5b6d73228e5280be0783c69184c963f/invoke.js"></script>
+            </div>
+            
+            <div class="greeting">
+                <h1><span id="senderName">Sukha Joshua</span> की ओर से</h1>
+                <p>आपको और आपके परिवार को</p>
+                <h1 style="font-size: 3.5em;">Merry Christmas 2025</h1>
+            </div>
+
+            <img src="MerryChristmas.gif" alt="Merry Christmas" class="main-gif">
+
+            <div class="bible-verse">
+                <p>"क्योंकि आज दाऊद के नगर में तुम्हारे लिये एक उद्धारकर्ता जन्मा है, जो मसीह प्रभु है।"</p>
+                <strong>~ लूका 2:11</strong>
+            </div>
+
+            <img src="jesus.png" alt="Jesus" class="jesus-img">
+
+            <div class="greeting">
+                 <h1>Happy New Year 2026</h1>
+                 <p>की हार्दिक शुभकामनाएँ।</p>
+                 <p>प्रभु यीशु मसीह का जन्म आपके घर में शान्ति, कृपा, आशीष और नई आशा लेकर आए।</p>
+            </div>
+            
+             <!-- दूसरा विज्ञापन कोड -->
+            <div style="margin: 25px 0; text-align: center;">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : 'cd2f9bad24158358abf96db9e4bbdc59',
+                        'format' : 'iframe',
+                        'height' : 60,
+                        'width' : 468,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/cd2f9bad24158358abf96db9e4bbdc59/invoke.js"></script>
+            </div>
+            
+            <!-- YouTube Video Integration -->
+            <div class="video-container">
+                <iframe 
+                    id="youtube-player"
+                    src="https://www.youtube.com/embed/31pLok6x8ck?autoplay=1&mute=1&loop=1&playlist=31pLok6x8ck&controls=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <h2 class="section-title">Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1C1joKKJUG/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://youtube.com/@joshuatvrecords?si=QlzRNpi6ZuKLeNFk" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/joshuatvrecordpresents?igsh=MW1ka3pkb2ppZHloNQ" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://joshuatvrecord.blogspot.com" target="_blank"><i class="fab fa-blogger"></i></a>
+                <a href="https://pin.it/3BKoTWu58" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+
+        <!-- Affiliate Links Section -->
+        <div class="affiliate-section">
+            <h2 class="section-title">Shopping Recommendations</h2>
+            <div class="affiliate-grid">
+                <div class="affiliate-item"><img src="BestYoutubeMicke.png" alt="Youtube Mic"><a href="https://amzn.to/4qVvLes" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="Abhishikatgeetonkimala.png" alt="Book"><a href="https://amzn.to/4m2BrQt" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="Sanatanpermeshwar.png" alt="Book 2"><a href="https://amzn.to/4f5s0gY" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="HolyBible.png" alt="Holy Bible"><a href="https://amzn.to/4o5ksxq" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="WiproSmartmusicBulb.png" alt="Smart Bulb"><a href="https://amzn.to/43IKqQ9" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="BibleVerseinwall.png" alt="Wall Frame"><a href="https://amzn.to/4o2MklP" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="Jesusverce.png" alt="Jesus Frame"><a href="https://amzn.to/4rbsPdF" target="_blank" class="buy-btn">BUY</a></div>
+                <div class="affiliate-item"><img src="MenStyle.png" alt="Men Style"><a href="https://amzn.to/4a3NaeK" target="_blank" class="buy-btn">BUY</a></div>
+            </div>
+        </div>
+        
+        <!-- AdSense Placeholder (विज्ञापन कोड यहाँ से हटा दिया गया है) -->
+        <div class="adsense-placeholder">
+             <p>Your Ad Here</p>
+        </div>
+
+        <!-- Link Generator -->
+        <div class="generator-section">
+            <h3>Create Your Wishing Link</h3>
+            <input type="text" id="nameInput" placeholder="आप यहां अपना नाम लिखें">
+            <button class="btn" id="generateBtn">लिंक बनाएं</button>
+            <div id="generatedLinkContainer">
+                <p>आपका लिंक तैयार है! इसे कॉपी करें या व्हाट्सएप पर शेयर करें।</p>
+                <div id="generatedLink" title="कॉपी करने के लिए क्लिक करें"></div>
+                <a href="#" id="whatsappShareBtn" class="btn whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp पर शेयर करें
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Subscription Modal -->
+    <div class="modal-overlay" id="subscribeModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h3>एक और कदम!</h3>
+            <p>अपना व्यक्तिगत शुभकामना लिंक बनाने के लिए, कृपया हमारे YouTube चैनल को सब्सक्राइब करें।</p>
+            <a href="https://youtube.com/@joshuatvrecords?sub_confirmation=1" class="btn" id="subscribeAndGenerateBtn" target="_blank">Subscribe & Create Link</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const senderNameElement = document.getElementById('senderName');
+            const generateBtn = document.getElementById('generateBtn');
+            const nameInput = document.getElementById('nameInput');
+            const generatedLinkContainer = document.getElementById('generatedLinkContainer');
+            const generatedLink = document.getElementById('generatedLink');
+            const whatsappShareBtn = document.getElementById('whatsappShareBtn');
+            
+            const subscribeModal = document.getElementById('subscribeModal');
+            const subscribeAndGenerateBtn = document.getElementById('subscribeAndGenerateBtn');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            let nameToGenerate = ''; // नाम को अस्थायी रूप से रखने के लिए
+
+            // --- 1. URL से नाम पढ़ना (अगर कोई शुभकामना लिंक से आया है) ---
+            const urlParams = new URLSearchParams(window.location.search);
+            const nameFromUrl = urlParams.get('name');
+            if (nameFromUrl) {
+                senderNameElement.textContent = decodeURIComponent(nameFromUrl);
+            }
+
+            // --- 2. "लिंक बनाएं" बटन का लॉजिक ---
+            generateBtn.addEventListener('click', function() {
+                const name = nameInput.value.trim();
+                if (name === '') {
+                    alert('कृपया अपना नाम दर्ज करें।');
+                    return;
+                }
+                // नाम को स्टोर करें और पॉप-अप दिखाएँ
+                nameToGenerate = name;
+                subscribeModal.style.display = 'flex';
+            });
+
+            // --- 3. "Subscribe & Create Link" बटन का लॉजिक (सबसे महत्वपूर्ण) ---
+            subscribeAndGenerateBtn.addEventListener('click', function() {
+                // अगर नाम स्टोर है, तो लिंक बना दें
+                if (nameToGenerate) {
+                    createWishingLink(nameToGenerate);
+                }
+                // पॉप-अप छिपा दें
+                subscribeModal.style.display = 'none';
+                // <a> टैग का डिफ़ॉल्ट व्यवहार (href पर जाना) अपने आप काम करेगा
+            });
+
+            // --- 4. पॉप-अप बंद करने का लॉजिक ---
+            closeModalBtn.addEventListener('click', function() {
+                subscribeModal.style.display = 'none';
+                nameToGenerate = ''; // अगर उपयोगकर्ता रद्द करता है तो नाम रीसेट करें
+            });
+            
+            // --- 5. शुभकामना लिंक बनाने और दिखाने का फंक्शन ---
+            function createWishingLink(name) {
+                const encodedName = encodeURIComponent(name);
+                const baseUrl = window.location.href.split('?')[0];
+                const newUrl = `${baseUrl}?name=${encodedName}`;
+
+                generatedLink.textContent = newUrl;
+                
+                const whatsappMessage = encodeURIComponent(`*${name}* ने आपको क्रिसमस और नए साल की शुभकामनाएं भेजी हैं। 🎁✨ देखने के लिए नीचे दिए गए लिंक पर क्लिक करें 👇\n${newUrl}`);
+                whatsappShareBtn.href = `https://api.whatsapp.com/send?text=${whatsappMessage}`;
+
+                generatedLinkContainer.style.display = 'block';
+                whatsappShareBtn.style.display = 'inline-block';
+            }
+
+            // --- 6. जेनरेट हुए लिंक को कॉपी करने का फंक्शन ---
+            generatedLink.addEventListener('click', function() {
+                navigator.clipboard.writeText(generatedLink.textContent).then(() => {
+                    alert('लिंक कॉपी हो गया!');
+                }).catch(err => {
+                    console.error('लिंक कॉपी नहीं हो सका: ', err);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
